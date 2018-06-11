@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron" style="text-align: center" background="{{ url_for('static', filename='img/Belly.jpg') }}">
+        <div class="jumbotron" style="text-align: center">
             <h1>Belly Button Biodiversity</h1>
             <h1>Dashboard</h1>
             <p>Use the interactive charts below to explore the dataset!</p>
@@ -22,57 +22,49 @@
 
         <div class="row featurette">
             <div class="col-md-2">
-                <h4 class="featurette-heading"><span class="text-muted">SELECT Sample:</span></h4>
-                <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                <br>
+                <div class="panel panel-default">
+                    <div class="panel-body selSection">
+                        <h4 id="selTitle">SELECT Sample:</h4>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </div>
+
                 <br>
 
-                <div class="panel panel-success">
+                <div class="panel panel-danger">
                     <div class="panel-heading">
                       <h4 class="panel-title">Sample MetaData</h4>
                     </div>
-                    <div class="panel-body">
-                      
-                        
+                    <div class="panel-body metainfo" >                                              
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                
+            <div class="col-md-5">                
                 <div id="pie"></div>
             </div>
             <div class="col-md-5">
-                <div id="gauge"></div>
-                
+                <div id="gauge"></div>                
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            
-            <div class="col-md-12">
-                
+        <div class="row featurette">            
+            <div class="col-md-12">                
                 <div id="bubble"></div>
             </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-            
-            <div class="col-md-6">
-                
+        <div class="row featurette">           
+            <div class="col-md-6">                
                 <img src="{{ url_for('static', filename='img/Bacteria.jpg') }}" alt="Bacteria image" style="width:100%;">
             </div>
-            <div class="col-md-6">
-                
-                <img src="{{ url_for('static', filename='img/Belly.jpg') }}" alt="Belly image" style="width:100%;">
-                
+            <div class="col-md-6">                
+                <img src="{{ url_for('static', filename='img/Belly.jpg') }}" alt="Belly image" style="width:100%;">               
             </div>
         </div>
-
-
 
         <hr class="featurette-divider">
 
