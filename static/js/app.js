@@ -93,7 +93,7 @@ Plotly.d3.json(default_url, function(error, response) {
             yaxis: {
                 title: 'OTU Sample Values'
             },
-            height: 600,
+            height: 500,
             width: 1200
             
           };

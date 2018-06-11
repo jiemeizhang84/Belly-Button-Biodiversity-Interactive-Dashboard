@@ -37,27 +37,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5">
                 
                 <div id="pie"></div>
             </div>
-            <div class="col-md-3">
-                <h4 class="featurette-heading">Explore the sample data. <span class="text-muted">Check Pie Chart.</span></h4>
-                <img src="{{ url_for('static', filename='img/Belly.jpg') }}" alt="Belly image" style="width:100%;">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            
             <div class="col-md-5">
-                <h4 class="featurette-heading">Check the weekly washing frequency. <span class="text-muted">Check Gauge Chart</span></h4>
-                <img src="{{ url_for('static', filename='img/Bacteria.jpg') }}" alt="Bacteria image" style="width:100%;">
-            </div>
-            <div class="col-md-7">
-                
                 <div id="gauge"></div>
+                
             </div>
         </div>
 
@@ -66,10 +52,27 @@
         <div class="row featurette">
             
             <div class="col-md-12">
-                <h4 class="featurette-heading">Check the bubble chart. <span class="text-muted">Check Bubble Chart</span></h4>
+                
                 <div id="bubble"></div>
             </div>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            
+            <div class="col-md-6">
+                
+                <img src="{{ url_for('static', filename='img/Bacteria.jpg') }}" alt="Bacteria image" style="width:100%;">
+            </div>
+            <div class="col-md-6">
+                
+                <img src="{{ url_for('static', filename='img/Belly.jpg') }}" alt="Belly image" style="width:100%;">
+                
+            </div>
+        </div>
+
+
 
         <hr class="featurette-divider">
 
